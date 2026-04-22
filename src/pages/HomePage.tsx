@@ -8,7 +8,7 @@ import {
   Sparkles,
   Star,
 } from 'lucide-react'
-import { homeContent, programs } from '../data/content'
+import { homeContent, programs, siteContent } from '../data/content'
 
 export function HomePage() {
   return (
@@ -22,7 +22,7 @@ export function HomePage() {
             <CalendarCheck2 size={16} aria-hidden="true" />
             {homeContent.scheduleTourLabel}
           </Link>
-          <a href="tel:+14252986424" className="btn btn-solid">
+          <a href={siteContent.sidebar.phoneHref} className="btn btn-solid">
             <PhoneCall size={16} aria-hidden="true" />
             {homeContent.callNowLabel}
           </a>
@@ -93,7 +93,7 @@ export function HomePage() {
             <CalendarCheck2 size={16} aria-hidden="true" />
             {homeContent.scheduleTourLabel}
           </Link>
-          <a href="tel:+14252986424" className="btn btn-solid">
+          <a href={siteContent.sidebar.phoneHref} className="btn btn-solid">
             <PhoneCall size={16} aria-hidden="true" />
             {homeContent.callNowLabel}
           </a>
