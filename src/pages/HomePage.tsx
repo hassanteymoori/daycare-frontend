@@ -1,4 +1,13 @@
 import { Link } from 'react-router-dom'
+import {
+  CalendarCheck2,
+  CircleHelp,
+  MapPin,
+  PhoneCall,
+  ShieldCheck,
+  Sparkles,
+  Star,
+} from 'lucide-react'
 import { programs } from '../data/content'
 
 export function HomePage() {
@@ -15,21 +24,28 @@ export function HomePage() {
         </p>
         <div className="hero-actions">
           <Link to="/contact" className="btn btn-outline">
+            <CalendarCheck2 size={16} aria-hidden="true" />
             Schedule a Tour
           </Link>
           <a href="tel:+14252986424" className="btn btn-solid">
+            <PhoneCall size={16} aria-hidden="true" />
             Call Now
           </a>
         </div>
-        <p className="home-rating">Rated by local families in Woodinville</p>
+        <p className="home-rating">
+          <Star size={16} aria-hidden="true" />
+          Rated by local families in Woodinville
+        </p>
       </article>
 
       <article className="panel checklist-panel">
-        <p>
+        <p className="meta-line">
+          <ShieldCheck size={16} aria-hidden="true" />
           Licensed Family Home Daycare • Small Group Setting • Experienced & Caring
           Environment
         </p>
         <Link to="/reviews" className="text-link">
+          <Star size={16} aria-hidden="true" />
           Read Our Google Reviews
         </Link>
       </article>
@@ -56,7 +72,10 @@ export function HomePage() {
       </div>
 
       <article className="panel faq-panel">
-        <h2>Frequently Asked Questions</h2>
+        <h2 className="heading-with-icon">
+          <CircleHelp size={18} aria-hidden="true" />
+          Frequently Asked Questions
+        </h2>
         <h3>How can I schedule a tour?</h3>
         <p>
           Click the Schedule a Tour button and submit the request form. We will
@@ -68,20 +87,28 @@ export function HomePage() {
           enrollment information.
         </p>
         <h3>Where are you located?</h3>
-        <p>We serve families in Woodinville, WA and nearby communities.</p>
+        <p className="meta-line">
+          <MapPin size={16} aria-hidden="true" />
+          We serve families in Woodinville, WA and nearby communities.
+        </p>
       </article>
 
       <article className="panel cta-panel">
-        <h2>Ready to visit Yalda Child Care?</h2>
+        <h2 className="heading-with-icon">
+          <Sparkles size={18} aria-hidden="true" />
+          Ready to visit Yalda Child Care?
+        </h2>
         <p>
           Schedule a tour today and see why Woodinville families trust Yalda
           Childcare.
         </p>
         <div className="hero-actions">
           <Link to="/contact" className="btn btn-outline">
+            <CalendarCheck2 size={16} aria-hidden="true" />
             Schedule a Tour
           </Link>
           <a href="tel:+14252986424" className="btn btn-solid">
+            <PhoneCall size={16} aria-hidden="true" />
             Call Now
           </a>
         </div>

@@ -1,13 +1,29 @@
 import { NavLink, Outlet } from 'react-router-dom'
+import {
+  BookOpenText,
+  Camera,
+  Clock3,
+  GalleryHorizontal,
+  Globe,
+  House,
+  Mail,
+  MapPin,
+  Phone,
+  PhoneCall,
+  ShieldCheck,
+  Star,
+  Users,
+  UserRound,
+} from 'lucide-react'
 import yaldaPortrait from '../assets/yalda.jpg'
 
 const menuItems = [
-  { to: '/', label: 'Home', end: true },
-  { to: '/gallery', label: 'Gallery' },
-  { to: '/contact', label: 'Contact us' },
-  { to: '/reviews', label: 'Reviews' },
-  { to: '/programs', label: 'Programs' },
-  { to: '/about', label: 'About' },
+  { to: '/', label: 'Home', end: true, icon: House },
+  { to: '/gallery', label: 'Gallery', icon: GalleryHorizontal },
+  { to: '/contact', label: 'Contact us', icon: PhoneCall },
+  { to: '/reviews', label: 'Reviews', icon: Star },
+  { to: '/programs', label: 'Programs', icon: BookOpenText },
+  { to: '/about', label: 'About', icon: UserRound },
 ]
 
 export function SiteLayout() {
@@ -34,6 +50,7 @@ export function SiteLayout() {
                 isActive ? 'menu-link menu-link-active' : 'menu-link'
               }
             >
+              <item.icon size={15} aria-hidden="true" />
               {item.label}
             </NavLink>
           ))}
@@ -53,28 +70,52 @@ export function SiteLayout() {
           </p>
 
           <div className="sidebar-meta">
-            <p>Woodinville Childcare Center</p>
-            <a href="/reviews">Yalda&apos;s Reviews</a>
+            <p className="meta-line">
+              <MapPin size={15} aria-hidden="true" />
+              Woodinville Childcare Center
+            </p>
+            <a href="/reviews" className="meta-link">
+              <Star size={15} aria-hidden="true" />
+              Yalda&apos;s Reviews
+            </a>
           </div>
 
           <div className="sidebar-meta">
-            <strong>Get Started Today</strong>
-            <a href="https://google.com" target="_blank" rel="noreferrer">
+            <strong className="meta-line">
+              <ShieldCheck size={15} aria-hidden="true" />
+              Get Started Today
+            </strong>
+            <a href="https://google.com" target="_blank" rel="noreferrer" className="meta-link">
+              <Globe size={15} aria-hidden="true" />
               Google
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="meta-link">
+              <Camera size={15} aria-hidden="true" />
               Instagram
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="meta-link">
+              <Users size={15} aria-hidden="true" />
               Facebook
             </a>
           </div>
 
           <div className="sidebar-meta">
-            <a href="tel:+14252986424">(425) 298-6424</a>
-            <p>Yalda Child Care Center</p>
-            <p>Woodinville, WA 98072</p>
-            <a href="/contact">Contact us</a>
+            <a href="tel:+14252986424" className="meta-link">
+              <Phone size={15} aria-hidden="true" />
+              (425) 298-6424
+            </a>
+            <p className="meta-line">
+              <Mail size={15} aria-hidden="true" />
+              hello@yaldachildcare.com
+            </p>
+            <p className="meta-line">
+              <MapPin size={15} aria-hidden="true" />
+              Woodinville, WA 98072
+            </p>
+            <a href="/contact" className="meta-link">
+              <PhoneCall size={15} aria-hidden="true" />
+              Contact us
+            </a>
           </div>
 
           <div className="map-wrap">
@@ -93,8 +134,14 @@ export function SiteLayout() {
       </main>
 
       <footer className="site-footer">
-        <p>Yalda Childcare</p>
-        <p>Licensed Family Child Care in Cottage Lake, Woodinville</p>
+        <p className="meta-line">
+          <ShieldCheck size={15} aria-hidden="true" />
+          Yalda Childcare
+        </p>
+        <p className="meta-line">
+          <Clock3 size={15} aria-hidden="true" />
+          Licensed Family Child Care in Cottage Lake, Woodinville
+        </p>
       </footer>
     </div>
   )
