@@ -89,11 +89,11 @@ export const siteContent = {
   ],
   sidebar: {
     greeting: 'Hello,',
-    introTitle: "I'm Yalda",
+    introTitle: "I'm Yalda Barghi",
     introBody:
-      'I founded Little Roots Home Daycare in 2018, driven by my love for working with children. I care for little ones from newborns to 5 years old and create a safe, warm, and nurturing environment where every child can thrive.',
-    centerLabel: 'Woodinville Childcare Center',
-    reviewsLinkLabel: "Yalda's Reviews",
+      'I founded Little Roots Home Daycare in 2026, driven by my love for working with children. I care for little ones from newborns to 5 years old and create a safe, warm, and nurturing environment where every child can thrive.',
+    centerLabel: 'Puyallup Childcare Center',
+    reviewsLinkLabel: "Little Roots' Reviews",
     reviewsLink: '/reviews',
     getStartedLabel: 'Get Started Today',
     socials: [
@@ -101,30 +101,30 @@ export const siteContent = {
       { label: 'Instagram', url: 'https://instagram.com', iconKey: 'instagram' },
       { label: 'Facebook', url: 'https://facebook.com', iconKey: 'facebook' },
     ],
-    phoneDisplay: '(425) 298-6424',
-    phoneHref: 'tel:+14252986424',
-    email: 'hello@yaldachildcare.com',
-    cityLine: 'Woodinville, WA 98072',
+    phoneDisplay: '(425) 429-8058',
+    phoneHref: 'tel:+14254298058',
+    email: 'barghiyalda@gamil.com',
+    cityLine: '8627 185th St Ct E, Puyallup, WA 98375',
     contactLabel: 'Contact us',
     contactLink: '/contact',
     mapTitle: 'Little Roots Home Daycare location',
     mapEmbedUrl:
-      'https://maps.google.com/maps?q=Woodinville%20WA%2098072&t=&z=13&ie=UTF8&iwloc=&output=embed',
+      'https://maps.google.com/maps?q=8627%20185th%20St%20Ct%20E%2C%20Puyallup%20WA%2098375&t=&z=15&ie=UTF8&iwloc=&output=embed',
   },
   footer: {
     primary: 'Little Roots Home Daycare',
-    secondary: 'Licensed Family Child Care in Cottage Lake, Woodinville',
+    secondary: 'Licensed Family Child Care in Puyallup, WA',
   },
 }
 
 export const homeContent = {
-  eyebrow: 'Daycare in Woodinville, WA',
-  heroTitle: 'Looking for a trusted daycare in Woodinville, WA?',
+  eyebrow: 'Daycare in Puyallup, WA',
+  heroTitle: 'Looking for a trusted daycare in Puyallup, WA?',
   heroDescription:
-    'Little Roots Home Daycare is a licensed family home daycare serving Woodinville families since 2018. We provide a safe, nurturing, and structured environment where children build confidence, independence, and early learning skills.',
+    'Little Roots Home Daycare is a licensed family home daycare serving Puyallup families since 2026. We provide a safe, nurturing, and structured environment where children build confidence, independence, and early learning skills.',
   scheduleTourLabel: 'Schedule a Tour',
   callNowLabel: 'Call Now',
-  ratingLine: 'Rated by local families in Woodinville',
+  ratingLine: 'Rated by local families in Puyallup',
   trustLine:
     'Licensed Family Home Daycare • Small Group Setting • Experienced & Caring Environment',
   readReviewsLabel: 'Read Our Google Reviews',
@@ -146,20 +146,20 @@ export const homeContent = {
     },
     {
       question: 'Where are you located?',
-      answer: 'We serve families in Woodinville, WA and nearby communities.',
+      answer: 'We are located at 8627 185th St Ct E, Puyallup, WA 98375.',
       withMapPin: true,
     },
   ],
-  ctaTitle: 'Ready to visit Yalda Child Care?',
+  ctaTitle: 'Ready to visit Little Roots Home Daycare?',
   ctaDescription:
-    'Schedule a tour today and see why Woodinville families trust Little Roots Home Daycare.',
+    'Schedule a tour today and see why Puyallup families trust Little Roots Home Daycare.',
 }
 
 export const aboutContent = {
   eyebrow: 'About',
-  title: 'Yalda Child Care licensed daycare in Woodinville, WA',
+  title: 'Little Roots Home Daycare in Puyallup, WA',
   intro:
-    'Yalda Child Care is a licensed family home daycare serving infants, toddlers, and preschool-age children in Woodinville, WA. We provide a nurturing, structured environment where children learn, grow, and thrive.',
+    'Little Roots Home Daycare is a licensed family home daycare serving infants, toddlers, and preschool-age children in Puyallup, WA. Owned and operated by Yalda Barghi, we provide a nurturing, structured environment where children learn, grow, and thrive.',
   missionTitle: 'Our Mission & Values',
   missionBody:
     'Our mission is to provide a safe, trusting, and joyful place where families and children feel supported.',
@@ -177,9 +177,9 @@ export const aboutContent = {
   communityTitle: 'Community & Family Engagement',
   communityBody:
     'We encourage family involvement through regular updates, partnerships, and community connections that help children feel supported at daycare and at home.',
-  servingTitle: 'Serving Woodinville, WA',
+  servingTitle: 'Serving Puyallup, WA',
   servingBody:
-    'Yalda Child Care is proud to serve families in Woodinville and surrounding communities.',
+    'Little Roots Home Daycare is proud to serve families in Puyallup and surrounding communities.',
   servingStat: "10+ years of experience supporting children's development.",
 }
 
@@ -188,9 +188,9 @@ export const programsPageContent = {
   title: 'Our Childcare Programs',
   description:
     'We offer age-appropriate programs designed to support early development through guided play, structured routines, and nurturing care.',
-  whyTitle: 'Why Families Choose Yalda Child Care',
+  whyTitle: 'Why Families Choose Little Roots Home Daycare',
   whyItems: [
-    'Licensed family home daycare in Woodinville, WA',
+    'Licensed family home daycare in Puyallup, WA',
     'Small group setting for individualized attention',
     'Consistent daily routines for security and growth',
     'Clear communication with families',
@@ -200,9 +200,9 @@ export const programsPageContent = {
 
 export const reviewsPageContent = {
   eyebrow: 'Reviews',
-  title: 'Families who trust Yalda Child Care',
+  title: 'Families who trust Little Roots Home Daycare',
   seeGoogleLabel: 'See our reviews on Google',
-  leaveGoogleLabel: 'Leave a review for Yalda Child Care',
+  leaveGoogleLabel: 'Leave a review for Little Roots Home Daycare',
   googleReviewsUrl: 'https://google.com',
   leaveReviewUrl: 'https://google.com',
 }
@@ -219,7 +219,8 @@ export const contactPageContent = {
   phoneLabel: 'Phone Number',
   phonePlaceholder: '(555) 123-4567',
   submitLabel: 'Send Inquiry',
-  contactLine: 'Call (425) 298-6424 or email hello@yaldachildcare.com',
+  contactLine:
+    'Call (425) 429-8058, email barghiyalda@gamil.com, or visit 8627 185th St Ct E, Puyallup, WA 98375',
 }
 
 export const galleryPageContent = {

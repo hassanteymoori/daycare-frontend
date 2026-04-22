@@ -74,17 +74,15 @@ export function SiteLayout() {
           <p className="eyebrow">{siteContent.sidebar.greeting}</p>
           <h2>{siteContent.sidebar.introTitle}</h2>
           <p>{siteContent.sidebar.introBody}</p>
+          <hr className="wp-block-separator has-alpha-channel-opacity" />
 
           <div className="sidebar-meta">
-            <p className="meta-line">
-              <MapPin size={15} aria-hidden="true" />
-              {siteContent.sidebar.centerLabel}
-            </p>
             <a href={siteContent.sidebar.reviewsLink} className="meta-link">
               <Star size={15} aria-hidden="true" />
               {siteContent.sidebar.reviewsLinkLabel}
             </a>
           </div>
+          <hr className="wp-block-separator has-alpha-channel-opacity" />
 
           <div className="sidebar-meta">
             <strong className="meta-line">
@@ -107,6 +105,7 @@ export function SiteLayout() {
               )
             })}
           </div>
+          <hr className="wp-block-separator has-alpha-channel-opacity" />
 
           <div className="sidebar-meta">
             <a href={siteContent.sidebar.phoneHref} className="meta-link">
@@ -126,6 +125,7 @@ export function SiteLayout() {
               {siteContent.sidebar.contactLabel}
             </a>
           </div>
+          <hr className="wp-block-separator has-alpha-channel-opacity" />
 
           <div className="map-wrap">
             <iframe
