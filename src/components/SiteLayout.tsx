@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import {
   BookOpenText,
@@ -7,11 +8,13 @@ import {
   Globe,
   House,
   Mail,
+  Menu,
   MapPin,
   Phone,
   PhoneCall,
   ShieldCheck,
   Star,
+  X,
   Users,
   UserRound,
 } from 'lucide-react'
@@ -35,12 +38,14 @@ const socialIcons: Record<string, LucideIcon> = {
 }
 
 export function SiteLayout() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
     <div className="site-shell">
       <div className="top-note">{siteContent.topNote}</div>
 
       <header className="main-header">
-        <NavLink to="/" className="brand" end>
+        <NavLink to="/" className="brand" end onClick={() => setIsMenuOpen(false)}>
           <span className="brand-mark">{siteContent.brand.mark}</span>
           <span>
             <strong>{siteContent.brand.name}</strong>
@@ -48,7 +53,23 @@ export function SiteLayout() {
           </span>
         </NavLink>
 
-        <nav className="main-nav" aria-label="Primary navigation">
+        <button
+          type="button"
+          className="menu-toggle"
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          aria-expanded={isMenuOpen}
+          aria-controls="primary-nav"
+          aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+        >
+          {isMenuOpen ? <X size={18} aria-hidden="true" /> : <Menu size={18} aria-hidden="true" />}
+          Menu
+        </button>
+
+        <nav
+          id="primary-nav"
+          className={isMenuOpen ? 'main-nav main-nav-open' : 'main-nav'}
+          aria-label="Primary navigation"
+        >
           {siteContent.menu.map((item) => {
             const MenuIcon = menuIcons[item.iconKey] ?? House
             return (
@@ -56,6 +77,7 @@ export function SiteLayout() {
                 key={item.to}
                 to={item.to}
                 end={item.end}
+                onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) =>
                   isActive ? 'menu-link menu-link-active' : 'menu-link'
                 }

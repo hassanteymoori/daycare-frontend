@@ -223,6 +223,9 @@ export const contactPageContent = {
   childAgePlaceholder: 'Example: 2 years old',
   phoneLabel: 'Phone Number',
   phonePlaceholder: '(555) 123-4567',
+  inquiryLabel: 'Inquiry Details',
+  inquiryPlaceholder:
+    'Tell us about your childcare needs, preferred start date, and any important details we should know.',
   submitLabel: 'Send Inquiry',
   contactLine:
     'Call (425) 429-8058, email barghiyalda@gmail.com, or visit 8627 185th St Ct E, Puyallup, WA 98375',

@@ -1,4 +1,4 @@
-import { Baby, Mail, Phone, Send, UserRound } from 'lucide-react'
+import { Baby, Mail, MessageSquareText, Phone, Send, UserRound } from 'lucide-react'
 import { contactPageContent } from '../data/content'
 
 export function ContactPage() {
@@ -34,6 +34,15 @@ export function ContactPage() {
 
         <label htmlFor="phone-number" className="meta-line"><Phone size={14} aria-hidden="true" />{contactPageContent.phoneLabel}</label>
         <input id="phone-number" name="phoneNumber" type="tel" placeholder={contactPageContent.phonePlaceholder} required />
+
+        <label htmlFor="inquiry-message" className="meta-line"><MessageSquareText size={14} aria-hidden="true" />{contactPageContent.inquiryLabel}</label>
+        <textarea
+          id="inquiry-message"
+          name="inquiryMessage"
+          placeholder={contactPageContent.inquiryPlaceholder}
+          rows={5}
+          required
+        />
 
         <button type="submit" className="btn btn-solid">
           <Send size={16} aria-hidden="true" />
