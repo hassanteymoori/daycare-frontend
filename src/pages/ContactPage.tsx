@@ -10,15 +10,29 @@ export function ContactPage() {
         <p>{contactPageContent.description}</p>
       </article>
 
-      <form className="panel contact-card" onSubmit={(event) => event.preventDefault()}>
+      <form
+        className="panel contact-card"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label htmlFor="contact-bot-field">
+            Do not fill this out if you are human:
+            <input id="contact-bot-field" name="bot-field" />
+          </label>
+        </p>
+
         <label htmlFor="parent-name" className="meta-line"><UserRound size={14} aria-hidden="true" />{contactPageContent.parentNameLabel}</label>
-        <input id="parent-name" placeholder={contactPageContent.parentNamePlaceholder} />
+        <input id="parent-name" name="parentName" placeholder={contactPageContent.parentNamePlaceholder} required />
 
         <label htmlFor="child-age" className="meta-line"><Baby size={14} aria-hidden="true" />{contactPageContent.childAgeLabel}</label>
-        <input id="child-age" placeholder={contactPageContent.childAgePlaceholder} />
+        <input id="child-age" name="childAge" placeholder={contactPageContent.childAgePlaceholder} required />
 
         <label htmlFor="phone-number" className="meta-line"><Phone size={14} aria-hidden="true" />{contactPageContent.phoneLabel}</label>
-        <input id="phone-number" type="tel" placeholder={contactPageContent.phonePlaceholder} />
+        <input id="phone-number" name="phoneNumber" type="tel" placeholder={contactPageContent.phonePlaceholder} required />
 
         <button type="submit" className="btn btn-solid">
           <Send size={16} aria-hidden="true" />
