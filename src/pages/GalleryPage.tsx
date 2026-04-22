@@ -50,6 +50,7 @@ export function GalleryPage() {
           <Camera size={20} aria-hidden="true" />
           {galleryPageContent.title}
         </h1>
+        <p>{galleryPageContent.description}</p>
       </article>
 
       <div className="gallery-mosaic">

@@ -234,5 +234,7 @@ export const contactPageContent = {
 export const galleryPageContent = {
   eyebrow: 'Gallery',
   title: 'A peek into our day',
+  description:
+    'Explore moments from our daily routine, hands-on learning, creative play, and joyful connections throughout the day.',
   cardTagline: 'Daily moments of learning and play',
 }
