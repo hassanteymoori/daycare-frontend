@@ -15,113 +15,122 @@ import {
   Users,
   UserRound,
 } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 import yaldaPortrait from '../assets/yalda.jpg'
+import { siteContent } from '../data/content'
 
-const menuItems = [
-  { to: '/', label: 'Home', end: true, icon: House },
-  { to: '/gallery', label: 'Gallery', icon: GalleryHorizontal },
-  { to: '/contact', label: 'Contact us', icon: PhoneCall },
-  { to: '/reviews', label: 'Reviews', icon: Star },
-  { to: '/programs', label: 'Programs', icon: BookOpenText },
-  { to: '/about', label: 'About', icon: UserRound },
-]
+const menuIcons: Record<string, LucideIcon> = {
+  home: House,
+  gallery: GalleryHorizontal,
+  contact: PhoneCall,
+  reviews: Star,
+  programs: BookOpenText,
+  about: UserRound,
+}
+
+const socialIcons: Record<string, LucideIcon> = {
+  google: Globe,
+  instagram: Camera,
+  facebook: Users,
+}
 
 export function SiteLayout() {
   return (
     <div className="site-shell">
-      <div className="top-note">Enrollment open for Summer 2026</div>
+      <div className="top-note">{siteContent.topNote}</div>
 
       <header className="main-header">
         <NavLink to="/" className="brand" end>
-          <span className="brand-mark">Y</span>
+          <span className="brand-mark">{siteContent.brand.mark}</span>
           <span>
-            <strong>Yalda Childcare</strong>
-            <small>Playful learning, peaceful care</small>
+            <strong>{siteContent.brand.name}</strong>
+            <small>{siteContent.brand.tagline}</small>
           </span>
         </NavLink>
 
         <nav className="main-nav" aria-label="Primary navigation">
-          {menuItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              end={item.end}
-              className={({ isActive }) =>
-                isActive ? 'menu-link menu-link-active' : 'menu-link'
-              }
-            >
-              <item.icon size={15} aria-hidden="true" />
-              {item.label}
-            </NavLink>
-          ))}
+          {siteContent.menu.map((item) => {
+            const MenuIcon = menuIcons[item.iconKey] ?? House
+            return (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                end={item.end}
+                className={({ isActive }) =>
+                  isActive ? 'menu-link menu-link-active' : 'menu-link'
+                }
+              >
+                <MenuIcon size={15} aria-hidden="true" />
+                {item.label}
+              </NavLink>
+            )
+          })}
         </nav>
       </header>
 
       <main className="page-main content-shell">
         <aside className="left-sidebar panel">
           <img className="sidebar-photo" src={yaldaPortrait} alt="Yalda" />
-          <p className="eyebrow">Hello,</p>
-          <h2>I&apos;m Yalda</h2>
-          <p>
-            I founded Yalda Childcare in 2018, driven by my love for working with
-            children. I care for little ones from newborns to 5 years old and
-            create a safe, warm, and nurturing environment where every child can
-            thrive.
-          </p>
+          <p className="eyebrow">{siteContent.sidebar.greeting}</p>
+          <h2>{siteContent.sidebar.introTitle}</h2>
+          <p>{siteContent.sidebar.introBody}</p>
 
           <div className="sidebar-meta">
             <p className="meta-line">
               <MapPin size={15} aria-hidden="true" />
-              Woodinville Childcare Center
+              {siteContent.sidebar.centerLabel}
             </p>
-            <a href="/reviews" className="meta-link">
+            <a href={siteContent.sidebar.reviewsLink} className="meta-link">
               <Star size={15} aria-hidden="true" />
-              Yalda&apos;s Reviews
+              {siteContent.sidebar.reviewsLinkLabel}
             </a>
           </div>
 
           <div className="sidebar-meta">
             <strong className="meta-line">
               <ShieldCheck size={15} aria-hidden="true" />
-              Get Started Today
+              {siteContent.sidebar.getStartedLabel}
             </strong>
-            <a href="https://google.com" target="_blank" rel="noreferrer" className="meta-link">
-              <Globe size={15} aria-hidden="true" />
-              Google
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="meta-link">
-              <Camera size={15} aria-hidden="true" />
-              Instagram
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="meta-link">
-              <Users size={15} aria-hidden="true" />
-              Facebook
-            </a>
+            {siteContent.sidebar.socials.map((social) => {
+              const SocialIcon = socialIcons[social.iconKey] ?? Globe
+              return (
+                <a
+                  key={social.label}
+                  href={social.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="meta-link"
+                >
+                  <SocialIcon size={15} aria-hidden="true" />
+                  {social.label}
+                </a>
+              )
+            })}
           </div>
 
           <div className="sidebar-meta">
-            <a href="tel:+14252986424" className="meta-link">
+            <a href={siteContent.sidebar.phoneHref} className="meta-link">
               <Phone size={15} aria-hidden="true" />
-              (425) 298-6424
+              {siteContent.sidebar.phoneDisplay}
             </a>
             <p className="meta-line">
               <Mail size={15} aria-hidden="true" />
-              hello@yaldachildcare.com
+              {siteContent.sidebar.email}
             </p>
             <p className="meta-line">
               <MapPin size={15} aria-hidden="true" />
-              Woodinville, WA 98072
+              {siteContent.sidebar.cityLine}
             </p>
-            <a href="/contact" className="meta-link">
+            <a href={siteContent.sidebar.contactLink} className="meta-link">
               <PhoneCall size={15} aria-hidden="true" />
-              Contact us
+              {siteContent.sidebar.contactLabel}
             </a>
           </div>
 
           <div className="map-wrap">
             <iframe
-              title="Yalda Childcare location"
-              src="https://maps.google.com/maps?q=Woodinville%20WA%2098072&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              title={siteContent.sidebar.mapTitle}
+              src={siteContent.sidebar.mapEmbedUrl}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
@@ -136,11 +145,11 @@ export function SiteLayout() {
       <footer className="site-footer">
         <p className="meta-line">
           <ShieldCheck size={15} aria-hidden="true" />
-          Yalda Childcare
+          {siteContent.footer.primary}
         </p>
         <p className="meta-line">
           <Clock3 size={15} aria-hidden="true" />
-          Licensed Family Child Care in Cottage Lake, Woodinville
+          {siteContent.footer.secondary}
         </p>
       </footer>
     </div>

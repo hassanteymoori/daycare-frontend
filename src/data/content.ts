@@ -71,3 +71,159 @@ export const reviews = [
     parent: 'zhida666',
   },
 ]
+
+export const siteContent = {
+  topNote: 'Enrollment open for Summer 2026',
+  brand: {
+    mark: 'Y',
+    name: 'Little Roots Home Daycare',
+    tagline: 'Playful learning, peaceful care',
+  },
+  menu: [
+    { to: '/', label: 'Home', end: true, iconKey: 'home' },
+    { to: '/gallery', label: 'Gallery', iconKey: 'gallery' },
+    { to: '/contact', label: 'Contact us', iconKey: 'contact' },
+    { to: '/reviews', label: 'Reviews', iconKey: 'reviews' },
+    { to: '/programs', label: 'Programs', iconKey: 'programs' },
+    { to: '/about', label: 'About', iconKey: 'about' },
+  ],
+  sidebar: {
+    greeting: 'Hello,',
+    introTitle: "I'm Yalda",
+    introBody:
+      'I founded Little Roots Home Daycare in 2018, driven by my love for working with children. I care for little ones from newborns to 5 years old and create a safe, warm, and nurturing environment where every child can thrive.',
+    centerLabel: 'Woodinville Childcare Center',
+    reviewsLinkLabel: "Yalda's Reviews",
+    reviewsLink: '/reviews',
+    getStartedLabel: 'Get Started Today',
+    socials: [
+      { label: 'Google', url: 'https://google.com', iconKey: 'google' },
+      { label: 'Instagram', url: 'https://instagram.com', iconKey: 'instagram' },
+      { label: 'Facebook', url: 'https://facebook.com', iconKey: 'facebook' },
+    ],
+    phoneDisplay: '(425) 298-6424',
+    phoneHref: 'tel:+14252986424',
+    email: 'hello@yaldachildcare.com',
+    cityLine: 'Woodinville, WA 98072',
+    contactLabel: 'Contact us',
+    contactLink: '/contact',
+    mapTitle: 'Little Roots Home Daycare location',
+    mapEmbedUrl:
+      'https://maps.google.com/maps?q=Woodinville%20WA%2098072&t=&z=13&ie=UTF8&iwloc=&output=embed',
+  },
+  footer: {
+    primary: 'Little Roots Home Daycare',
+    secondary: 'Licensed Family Child Care in Cottage Lake, Woodinville',
+  },
+}
+
+export const homeContent = {
+  eyebrow: 'Daycare in Woodinville, WA',
+  heroTitle: 'Looking for a trusted daycare in Woodinville, WA?',
+  heroDescription:
+    'Little Roots Home Daycare is a licensed family home daycare serving Woodinville families since 2018. We provide a safe, nurturing, and structured environment where children build confidence, independence, and early learning skills.',
+  scheduleTourLabel: 'Schedule a Tour',
+  callNowLabel: 'Call Now',
+  ratingLine: 'Rated by local families in Woodinville',
+  trustLine:
+    'Licensed Family Home Daycare • Small Group Setting • Experienced & Caring Environment',
+  readReviewsLabel: 'Read Our Google Reviews',
+  programsEyebrow: 'Programs',
+  programsTitle: 'Our Childcare Programs',
+  programsDescription:
+    'We offer age-appropriate programs designed to support early development through guided play, structured routines, and nurturing care.',
+  faqTitle: 'Frequently Asked Questions',
+  faqs: [
+    {
+      question: 'How can I schedule a tour?',
+      answer:
+        'Click the Schedule a Tour button and submit the request form. We will contact you to confirm a time that works for your family.',
+    },
+    {
+      question: 'Do you currently have availability?',
+      answer:
+        'Please submit a tour request or call directly for the most up-to-date enrollment information.',
+    },
+    {
+      question: 'Where are you located?',
+      answer: 'We serve families in Woodinville, WA and nearby communities.',
+      withMapPin: true,
+    },
+  ],
+  ctaTitle: 'Ready to visit Yalda Child Care?',
+  ctaDescription:
+    'Schedule a tour today and see why Woodinville families trust Little Roots Home Daycare.',
+}
+
+export const aboutContent = {
+  eyebrow: 'About',
+  title: 'Yalda Child Care licensed daycare in Woodinville, WA',
+  intro:
+    'Yalda Child Care is a licensed family home daycare serving infants, toddlers, and preschool-age children in Woodinville, WA. We provide a nurturing, structured environment where children learn, grow, and thrive.',
+  missionTitle: 'Our Mission & Values',
+  missionBody:
+    'Our mission is to provide a safe, trusting, and joyful place where families and children feel supported.',
+  missionValues: [
+    'Respect & Care: every child is treated with kindness and dignity.',
+    'Learning Through Play: activities encourage curiosity and growth.',
+    'Clear Communication: families stay informed and involved.',
+  ],
+  whyTitle: 'Why Families Choose Us',
+  whyItems: [
+    'Licensed and experienced caregivers',
+    'Consistent routines with open parent communication',
+    'Small-group setting with individualized attention',
+  ],
+  communityTitle: 'Community & Family Engagement',
+  communityBody:
+    'We encourage family involvement through regular updates, partnerships, and community connections that help children feel supported at daycare and at home.',
+  servingTitle: 'Serving Woodinville, WA',
+  servingBody:
+    'Yalda Child Care is proud to serve families in Woodinville and surrounding communities.',
+  servingStat: "10+ years of experience supporting children's development.",
+}
+
+export const programsPageContent = {
+  eyebrow: 'Programs',
+  title: 'Our Childcare Programs',
+  description:
+    'We offer age-appropriate programs designed to support early development through guided play, structured routines, and nurturing care.',
+  whyTitle: 'Why Families Choose Yalda Child Care',
+  whyItems: [
+    'Licensed family home daycare in Woodinville, WA',
+    'Small group setting for individualized attention',
+    'Consistent daily routines for security and growth',
+    'Clear communication with families',
+    'Safe and structured learning environment',
+  ],
+}
+
+export const reviewsPageContent = {
+  eyebrow: 'Reviews',
+  title: 'Families who trust Yalda Child Care',
+  seeGoogleLabel: 'See our reviews on Google',
+  leaveGoogleLabel: 'Leave a review for Yalda Child Care',
+  googleReviewsUrl: 'https://google.com',
+  leaveReviewUrl: 'https://google.com',
+}
+
+export const contactPageContent = {
+  eyebrow: 'Contact us',
+  title: 'Let us help with your childcare plan',
+  description:
+    "Tell us your child's age and preferred start date. We respond within one business day.",
+  parentNameLabel: 'Parent Name',
+  parentNamePlaceholder: 'Your full name',
+  childAgeLabel: 'Child Age',
+  childAgePlaceholder: 'Example: 2 years old',
+  phoneLabel: 'Phone Number',
+  phonePlaceholder: '(555) 123-4567',
+  submitLabel: 'Send Inquiry',
+  contactLine: 'Call (425) 298-6424 or email hello@yaldachildcare.com',
+}
+
+export const galleryPageContent = {
+  eyebrow: 'Gallery',
+  title: 'A peek into our day',
+  cardTagline: 'Daily moments of learning and play',
+}

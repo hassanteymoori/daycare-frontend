@@ -1,14 +1,14 @@
 import { Camera, Image, Sparkles } from 'lucide-react'
-import { galleryShots } from '../data/content'
+import { galleryPageContent, galleryShots } from '../data/content'
 
 export function GalleryPage() {
   return (
     <section className="page-section">
       <article className="panel title-block">
-        <p className="eyebrow">Gallery</p>
+        <p className="eyebrow">{galleryPageContent.eyebrow}</p>
         <h1 className="heading-with-icon">
           <Camera size={20} aria-hidden="true" />
-          A peek into our day
+          {galleryPageContent.title}
         </h1>
       </article>
 
@@ -23,7 +23,7 @@ export function GalleryPage() {
             <p>{shot.caption}</p>
             <p className="meta-line">
               <Sparkles size={14} aria-hidden="true" />
-              Daily moments of learning and play
+              {galleryPageContent.cardTagline}
             </p>
           </article>
         ))}

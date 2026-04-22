@@ -1,14 +1,14 @@
 import { MessageSquareQuote, Star } from 'lucide-react'
-import { reviews } from '../data/content'
+import { reviews, reviewsPageContent } from '../data/content'
 
 export function ReviewsPage() {
   return (
     <section className="page-section">
       <article className="panel title-block">
-        <p className="eyebrow">Reviews</p>
+        <p className="eyebrow">{reviewsPageContent.eyebrow}</p>
         <h1 className="heading-with-icon">
           <MessageSquareQuote size={20} aria-hidden="true" />
-          Families who trust Yalda Child Care
+          {reviewsPageContent.title}
         </h1>
       </article>
 
@@ -25,13 +25,13 @@ export function ReviewsPage() {
       </div>
 
       <article className="panel review-actions">
-        <a href="https://google.com" target="_blank" rel="noreferrer" className="text-link">
+        <a href={reviewsPageContent.googleReviewsUrl} target="_blank" rel="noreferrer" className="text-link">
           <Star size={16} aria-hidden="true" />
-          See our reviews on Google
+          {reviewsPageContent.seeGoogleLabel}
         </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer" className="text-link">
+        <a href={reviewsPageContent.leaveReviewUrl} target="_blank" rel="noreferrer" className="text-link">
           <MessageSquareQuote size={16} aria-hidden="true" />
-          Leave a review for Yalda Child Care
+          {reviewsPageContent.leaveGoogleLabel}
         </a>
       </article>
     </section>

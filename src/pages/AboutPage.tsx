@@ -1,68 +1,55 @@
 import { HandHeart, MessageCircleHeart, Puzzle, School, ShieldCheck, Users } from 'lucide-react'
+import { aboutContent } from '../data/content'
 
 export function AboutPage() {
   return (
     <section className="page-section">
       <article className="panel title-block">
-        <p className="eyebrow">About</p>
-        <h1>Yalda Child Care licensed daycare in Woodinville, WA</h1>
-        <p>
-          Yalda Child Care is a licensed family home daycare serving infants,
-          toddlers, and preschool-age children in Woodinville, WA. We provide a
-          nurturing, structured environment where children learn, grow, and thrive.
-        </p>
+        <p className="eyebrow">{aboutContent.eyebrow}</p>
+        <h1>{aboutContent.title}</h1>
+        <p>{aboutContent.intro}</p>
       </article>
 
       <article className="panel value-list">
         <h2 className="heading-with-icon">
           <HandHeart size={18} aria-hidden="true" />
-          Our Mission & Values
+          {aboutContent.missionTitle}
         </h2>
-        <p>
-          Our mission is to provide a safe, trusting, and joyful place where
-          families and children feel supported.
-        </p>
+        <p>{aboutContent.missionBody}</p>
         <ul>
-          <li className="icon-list-item"><ShieldCheck size={16} aria-hidden="true" />Respect & Care: every child is treated with kindness and dignity.</li>
-          <li className="icon-list-item"><Puzzle size={16} aria-hidden="true" />Learning Through Play: activities encourage curiosity and growth.</li>
-          <li className="icon-list-item"><MessageCircleHeart size={16} aria-hidden="true" />Clear Communication: families stay informed and involved.</li>
+          <li className="icon-list-item"><ShieldCheck size={16} aria-hidden="true" />{aboutContent.missionValues[0]}</li>
+          <li className="icon-list-item"><Puzzle size={16} aria-hidden="true" />{aboutContent.missionValues[1]}</li>
+          <li className="icon-list-item"><MessageCircleHeart size={16} aria-hidden="true" />{aboutContent.missionValues[2]}</li>
         </ul>
       </article>
 
       <article className="panel value-list">
         <h2 className="heading-with-icon">
           <Users size={18} aria-hidden="true" />
-          Why Families Choose Us
+          {aboutContent.whyTitle}
         </h2>
         <ul>
-          <li className="icon-list-item"><ShieldCheck size={16} aria-hidden="true" />Licensed and experienced caregivers</li>
-          <li className="icon-list-item"><MessageCircleHeart size={16} aria-hidden="true" />Consistent routines with open parent communication</li>
-          <li className="icon-list-item"><Users size={16} aria-hidden="true" />Small-group setting with individualized attention</li>
+          <li className="icon-list-item"><ShieldCheck size={16} aria-hidden="true" />{aboutContent.whyItems[0]}</li>
+          <li className="icon-list-item"><MessageCircleHeart size={16} aria-hidden="true" />{aboutContent.whyItems[1]}</li>
+          <li className="icon-list-item"><Users size={16} aria-hidden="true" />{aboutContent.whyItems[2]}</li>
         </ul>
       </article>
 
       <article className="panel">
         <h2 className="heading-with-icon">
           <MessageCircleHeart size={18} aria-hidden="true" />
-          Community & Family Engagement
+          {aboutContent.communityTitle}
         </h2>
-        <p>
-          We encourage family involvement through regular updates, partnerships,
-          and community connections that help children feel supported at daycare
-          and at home.
-        </p>
+        <p>{aboutContent.communityBody}</p>
       </article>
 
       <article className="panel">
         <h2 className="heading-with-icon">
           <School size={18} aria-hidden="true" />
-          Serving Woodinville, WA
+          {aboutContent.servingTitle}
         </h2>
-        <p>
-          Yalda Child Care is proud to serve families in Woodinville and
-          surrounding communities.
-        </p>
-        <p>10+ years of experience supporting children&apos;s development.</p>
+        <p>{aboutContent.servingBody}</p>
+        <p>{aboutContent.servingStat}</p>
       </article>
     </section>
   )

@@ -8,55 +8,46 @@ import {
   Sparkles,
   Star,
 } from 'lucide-react'
-import { programs } from '../data/content'
+import { homeContent, programs } from '../data/content'
 
 export function HomePage() {
   return (
     <section className="page-section">
       <article className="hero-copy panel">
-        <p className="eyebrow">Daycare in Woodinville, WA</p>
-        <h1>Looking for a trusted daycare in Woodinville, WA?</h1>
-        <p>
-          Yalda Childcare is a licensed family home daycare serving Woodinville
-          families since 2018. We provide a safe, nurturing, and structured
-          environment where children build confidence, independence, and early
-          learning skills.
-        </p>
+        <p className="eyebrow">{homeContent.eyebrow}</p>
+        <h1>{homeContent.heroTitle}</h1>
+        <p>{homeContent.heroDescription}</p>
         <div className="hero-actions">
           <Link to="/contact" className="btn btn-outline">
             <CalendarCheck2 size={16} aria-hidden="true" />
-            Schedule a Tour
+            {homeContent.scheduleTourLabel}
           </Link>
           <a href="tel:+14252986424" className="btn btn-solid">
             <PhoneCall size={16} aria-hidden="true" />
-            Call Now
+            {homeContent.callNowLabel}
           </a>
         </div>
         <p className="home-rating">
           <Star size={16} aria-hidden="true" />
-          Rated by local families in Woodinville
+          {homeContent.ratingLine}
         </p>
       </article>
 
       <article className="panel checklist-panel">
         <p className="meta-line">
           <ShieldCheck size={16} aria-hidden="true" />
-          Licensed Family Home Daycare • Small Group Setting • Experienced & Caring
-          Environment
+          {homeContent.trustLine}
         </p>
         <Link to="/reviews" className="text-link">
           <Star size={16} aria-hidden="true" />
-          Read Our Google Reviews
+          {homeContent.readReviewsLabel}
         </Link>
       </article>
 
       <article className="panel title-block">
-        <p className="eyebrow">Programs</p>
-        <h2>Our Childcare Programs</h2>
-        <p>
-          We offer age-appropriate programs designed to support early development
-          through guided play, structured routines, and nurturing care.
-        </p>
+        <p className="eyebrow">{homeContent.programsEyebrow}</p>
+        <h2>{homeContent.programsTitle}</h2>
+        <p>{homeContent.programsDescription}</p>
       </article>
 
       <div className="program-grid">
@@ -74,42 +65,37 @@ export function HomePage() {
       <article className="panel faq-panel">
         <h2 className="heading-with-icon">
           <CircleHelp size={18} aria-hidden="true" />
-          Frequently Asked Questions
+          {homeContent.faqTitle}
         </h2>
-        <h3>How can I schedule a tour?</h3>
-        <p>
-          Click the Schedule a Tour button and submit the request form. We will
-          contact you to confirm a time that works for your family.
-        </p>
-        <h3>Do you currently have availability?</h3>
-        <p>
-          Please submit a tour request or call directly for the most up-to-date
-          enrollment information.
-        </p>
-        <h3>Where are you located?</h3>
-        <p className="meta-line">
-          <MapPin size={16} aria-hidden="true" />
-          We serve families in Woodinville, WA and nearby communities.
-        </p>
+        {homeContent.faqs.map((faq) => (
+          <div key={faq.question}>
+            <h3>{faq.question}</h3>
+            {faq.withMapPin ? (
+              <p className="meta-line">
+                <MapPin size={16} aria-hidden="true" />
+                {faq.answer}
+              </p>
+            ) : (
+              <p>{faq.answer}</p>
+            )}
+          </div>
+        ))}
       </article>
 
       <article className="panel cta-panel">
         <h2 className="heading-with-icon">
           <Sparkles size={18} aria-hidden="true" />
-          Ready to visit Yalda Child Care?
+          {homeContent.ctaTitle}
         </h2>
-        <p>
-          Schedule a tour today and see why Woodinville families trust Yalda
-          Childcare.
-        </p>
+        <p>{homeContent.ctaDescription}</p>
         <div className="hero-actions">
           <Link to="/contact" className="btn btn-outline">
             <CalendarCheck2 size={16} aria-hidden="true" />
-            Schedule a Tour
+            {homeContent.scheduleTourLabel}
           </Link>
           <a href="tel:+14252986424" className="btn btn-solid">
             <PhoneCall size={16} aria-hidden="true" />
-            Call Now
+            {homeContent.callNowLabel}
           </a>
         </div>
       </article>
