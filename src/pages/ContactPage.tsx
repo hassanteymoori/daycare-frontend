@@ -14,6 +14,7 @@ export function ContactPage() {
         className="panel contact-card"
         name="contact"
         method="POST"
+        action="/"
         data-netlify="true"
         netlify-honeypot="bot-field"
       >
