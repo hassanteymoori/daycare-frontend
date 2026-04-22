@@ -24,7 +24,7 @@ export function ContactPage() {
           Send Inquiry
         </button>
 
-        <p className="muted">Call (555) 010-2026 or email hello@yaldachildcare.com</p>
+        <p className="muted">Call (425) 298-6424 or email hello@yaldachildcare.com</p>
       </form>
     </section>
   )

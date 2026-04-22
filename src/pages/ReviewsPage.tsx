@@ -5,7 +5,7 @@ export function ReviewsPage() {
     <section className="page-section">
       <article className="panel title-block">
         <p className="eyebrow">Reviews</p>
-        <h1>Families who trust Yalda</h1>
+        <h1>Families who trust Yalda Child Care</h1>
       </article>
 
       <div className="review-grid">
@@ -16,6 +16,15 @@ export function ReviewsPage() {
           </article>
         ))}
       </div>
+
+      <article className="panel review-actions">
+        <a href="https://google.com" target="_blank" rel="noreferrer" className="text-link">
+          See our reviews on Google
+        </a>
+        <a href="https://google.com" target="_blank" rel="noreferrer" className="text-link">
+          Leave a review for Yalda Child Care
+        </a>
+      </article>
     </section>
   )
 }

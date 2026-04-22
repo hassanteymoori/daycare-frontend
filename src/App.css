@@ -92,6 +92,69 @@
   padding: 1.2rem;
 }
 
+.content-shell {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.content-area {
+  min-width: 0;
+}
+
+.left-sidebar {
+  position: sticky;
+  top: 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.sidebar-photo {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  object-position: top center;
+  background: linear-gradient(165deg, #fff6ef, #f6fbff);
+  border-radius: 14px;
+  border: 1px solid var(--line-soft);
+}
+
+.sidebar-meta {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.sidebar-meta p,
+.sidebar-meta a,
+.sidebar-meta strong {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.sidebar-meta a {
+  color: var(--accent-strong);
+  text-decoration: none;
+  width: fit-content;
+}
+
+.sidebar-meta a:hover {
+  text-decoration: underline;
+}
+
+.map-wrap {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+}
+
+.map-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 170px;
+  border: none;
+}
+
 .page-section {
   display: grid;
   gap: 0.95rem;
@@ -130,6 +193,12 @@
 
 .hero-copy h1 {
   margin: 0.5rem 0 0.7rem;
+}
+
+.home-rating {
+  margin-top: 0.9rem;
+  font-weight: 700;
+  color: var(--accent-strong);
 }
 
 .hero-copy p {
@@ -204,6 +273,26 @@
   font-size: 0.84rem;
 }
 
+.checklist-panel,
+.faq-panel,
+.cta-panel {
+  background: linear-gradient(160deg, #fffefc, #fff8f4);
+}
+
+.faq-panel h3 {
+  margin: 1rem 0 0.35rem;
+}
+
+.text-link {
+  text-decoration: none;
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
 .gallery-grid,
 .program-grid,
 .review-grid {
@@ -259,6 +348,12 @@
   color: var(--accent-strong);
   font-weight: 700;
   font-size: 0.83rem;
+}
+
+.review-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .about-layout,
@@ -337,6 +432,14 @@
     grid-template-columns: 1fr;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .content-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .left-sidebar {
+    position: static;
   }
 
   .gallery-grid,

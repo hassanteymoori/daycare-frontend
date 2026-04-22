@@ -1,24 +1,24 @@
 export const programs = [
   {
-    title: 'Tiny Stars',
-    age: '6-18 months',
+    title: 'Infant Program',
+    age: '6 weeks-12 months',
     details:
-      'Warm, responsive care with cozy nap spaces, sensory play, and real-time family updates.',
-    ratio: '1 caregiver for every 3 infants',
+      'Our infant program focuses on individualized care, safe sensory exploration, and responsive routines that help babies feel secure and supported as they grow.',
+    ratio: 'Individualized infant care',
   },
   {
-    title: 'Little Explorers',
-    age: '18-36 months',
+    title: 'Toddler Program',
+    age: '12-30 months',
     details:
-      'Language growth, motor development, and playful discovery in a structured daily flow.',
-    ratio: '1 caregiver for every 5 toddlers',
+      'Toddlers learn through movement, language-rich interaction, and hands-on play while we guide social and emotional development.',
+    ratio: 'Play-based social growth',
   },
   {
-    title: 'Kindergarten Ready',
+    title: 'Preschool Program',
     age: '3-5 years',
     details:
-      'Early literacy, foundational math, art projects, and social-emotional coaching for school readiness.',
-    ratio: '1 teacher for every 8 preschoolers',
+      'Preschoolers build kindergarten readiness through early literacy, problem-solving activities, creative play, and small-group learning.',
+    ratio: 'Kindergarten readiness focus',
   },
 ]
 
@@ -52,17 +52,22 @@ export const galleryShots = [
 export const reviews = [
   {
     quote:
-      'Our son runs to the door every morning. The team made our first daycare experience feel safe and easy.',
-    parent: 'Leila M.',
+      'Yalda Child Care is truly a hidden gem in the Cottage Lake area. Our daughter had a wonderful time and came home with a big smile every day.',
+    parent: 'Xiao PAN',
   },
   {
     quote:
-      'The teachers are patient and truly know each child. We saw confidence grow in just a few weeks.',
-    parent: 'Arman R.',
+      'Yalda has taken care of our toddler since she was 10 months old. She loves it and we are so grateful for such a wonderful childcare option.',
+    parent: 'Alix Jones',
   },
   {
     quote:
-      'Communication is excellent and the environment is calm. We always feel connected to our daughter\'s day.',
-    parent: 'Neda K.',
+      'My little girl absolutely adores this place. Every pick-up comes with a beaming smile and stories from a fun day.',
+    parent: 'Eva Shi',
+  },
+  {
+    quote:
+      'My daughter comes home with a big smile every day and has built wonderful friendships here. We highly recommend this daycare.',
+    parent: 'zhida666',
   },
 ]
