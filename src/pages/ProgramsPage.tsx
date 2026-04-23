@@ -1,4 +1,4 @@
-import { Baby, BookOpenText, GraduationCap, Sparkles, Users } from 'lucide-react'
+import { Baby, BookOpenText, GraduationCap, Sparkles, Users, Utensils } from 'lucide-react'
 import { programs, programsPageContent } from '../data/content'
 
 export function ProgramsPage() {
@@ -36,6 +36,7 @@ export function ProgramsPage() {
           <li className="icon-list-item"><GraduationCap size={16} aria-hidden="true" />{programsPageContent.whyItems[2]}</li>
           <li className="icon-list-item"><BookOpenText size={16} aria-hidden="true" />{programsPageContent.whyItems[3]}</li>
           <li className="icon-list-item"><Sparkles size={16} aria-hidden="true" />{programsPageContent.whyItems[4]}</li>
+          <li className="icon-list-item"><Utensils size={16} aria-hidden="true" />{programsPageContent.whyItems[5]}</li>
         </ul>
       </article>
     </section>

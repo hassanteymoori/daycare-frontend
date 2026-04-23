@@ -4,21 +4,21 @@ export const programs = [
     age: '3-12 months',
     details:
       'Infants are cared for with individualized feeding and sleep schedules, responsive bottle-feeding, and safe sleep practices in approved play yards.',
-    ratio: 'Monthly tuition: $1500',
+    ratio: 'Monthly tuition: $1700 per month',
   },
   {
     title: 'Toddler Program',
     age: '1-3 years',
     details:
       'Toddlers learn through hands-on, play-based activities including art, sensory play, music, reading, and outdoor play with positive guidance.',
-    ratio: 'Monthly tuition: $1300',
+    ratio: 'Monthly tuition: $1500 per month',
   },
   {
     title: 'Preschool Program',
     age: '3-5 years',
     details:
       'Preschool children build kindergarten readiness through practical life routines, early learning activities, and independence skills.',
-    ratio: 'Monthly tuition: $1100',
+    ratio: 'Monthly tuition: $1300 per month',
   },
 ]
 
@@ -77,13 +77,13 @@ export const siteContent = {
   brand: {
     mark: 'Y',
     name: 'Little Roots Home Daycare',
-    tagline: 'Playful learning, peaceful care',
+    tagline: 'Playful learning, peaceful care, Montessori-inspired approach',
   },
   menu: [
     { to: '/', label: 'Home', end: true, iconKey: 'home' },
     { to: '/gallery', label: 'Gallery', iconKey: 'gallery' },
     { to: '/contact', label: 'Contact us', iconKey: 'contact' },
-    { to: '/reviews', label: 'Reviews', iconKey: 'reviews' },
+    // { to: '/reviews', label: 'Reviews', iconKey: 'reviews' },
     { to: '/programs', label: 'Programs', iconKey: 'programs' },
     { to: '/about', label: 'About', iconKey: 'about' },
   ],
@@ -91,14 +91,18 @@ export const siteContent = {
     greeting: 'Hello,',
     introTitle: "I'm Yalda Barghi",
     introBody:
-      'I provide licensed family home childcare for children ages 3 months to 5 years, with daily family communication and a safe, nurturing, play-based learning environment.',
+      'The Little Roots Home Daycare is a licensed family home childcare program for children ages 3 months to 5 years. We offer a safe, nurturing, and engaging environment with a hands-on, play-based, Montessori-inspired approach that supports independence, confidence, and meaningful learning. Children are cared for in a warm, home-like setting, with daily communication and strong partnerships with families. Owned and operated by Yalda Barghi, with a focus on quality care, safety, and early childhood development.',
     centerLabel: 'Puyallup Childcare Center',
     reviewsLinkLabel: "Little Roots' Reviews",
     reviewsLink: '/reviews',
     getStartedLabel: 'Get Started Today',
     socials: [
       { label: 'Google', url: 'https://google.com', iconKey: 'google' },
-      { label: 'Instagram', url: 'https://instagram.com', iconKey: 'instagram' },
+      {
+        label: '@littleroots_homedaycare',
+        url: 'https://www.instagram.com/littleroots_homedaycare',
+        iconKey: 'instagram',
+      },
       { label: 'Facebook', url: 'https://facebook.com', iconKey: 'facebook' },
     ],
     phoneDisplay: '(425) 429-8058',
@@ -195,11 +199,12 @@ export const programsPageContent = {
     'Programs are age-appropriate and rooted in hands-on, play-based learning, with mixed-age activities adapted for safe participation at each developmental stage.',
   whyTitle: 'Why Families Choose Little Roots Home Daycare',
   whyItems: [
-    'Licensed family home daycare in Puyallup, WA',
-    'Infant, toddler, and preschool tuition tiers with clear monthly rates',
-    'Breakfast, snacks, and lunch provided under USDA/CACFP guidelines',
-    'Positive guidance and developmentally appropriate behavior support',
-    'Emergency preparedness plan with regular fire, earthquake, and lockdown drills',
+    'Licensed & Safe Environment: We follow Washington State regulations to ensure a safe, clean, and secure space for every child.',
+    'Hands-On, Play-Based, Montessori-Inspired Learning:     Children learn through meaningful activities that build independence, confidence, and real-life skills.',
+    'Warm, Home-Like Setting:     A calm and nurturing environment where children feel comfortable, valued, and supported.',
+    'Small Group Care: Individual attention to support each child’s unique needs and development.',
+    'Daily Communication with Families: Ongoing updates to keep you connected to your child’s day and progress.',
+    'Structured Routine & Healthy Meals: Consistent daily schedule with balanced meals and snacks.'
   ],
 }
 
