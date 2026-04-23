@@ -19,6 +19,7 @@ import {
   UserRound,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
+import brandLogo from '../assets/logo.png'
 import yaldaPortrait from '../assets/yalda.jpg'
 import { siteContent } from '../data/content'
 
@@ -46,7 +47,9 @@ export function SiteLayout() {
 
       <header className="main-header">
         <NavLink to="/" className="brand" end onClick={() => setIsMenuOpen(false)}>
-          <span className="brand-mark">{siteContent.brand.mark}</span>
+          <span className="brand-mark">
+            <img className="brand-logo" src={brandLogo} alt={`${siteContent.brand.name} logo`} />
+          </span>
           <span>
             <strong>{siteContent.brand.name}</strong>
             <small>{siteContent.brand.tagline}</small>

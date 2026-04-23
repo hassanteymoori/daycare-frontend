@@ -6,7 +6,6 @@ import { ContactPage } from './pages/ContactPage'
 import { GalleryPage } from './pages/GalleryPage'
 import { HomePage } from './pages/HomePage'
 import { ProgramsPage } from './pages/ProgramsPage'
-import { ReviewsPage } from './pages/ReviewsPage'
 
 function App() {
   return (
