@@ -76,7 +76,7 @@ export const siteContent = {
   topNote: 'Open Monday-Friday, 7:00 AM-5:30 PM',
   brand: {
     mark: 'Y',
-    name: 'Little Roots Home Daycare',
+    name: 'The Little Roots Home Daycare',
     tagline: 'Playful learning, peaceful care, Montessori-inspired approach',
   },
   menu: [
@@ -91,19 +91,18 @@ export const siteContent = {
     greeting: 'Hello,',
     introTitle: "I'm Yalda Barghi",
     introBody:
-      'The Little Roots Home Daycare is a licensed family home childcare program for children ages 3 months to 5 years. We offer a safe, nurturing, and engaging environment with a hands-on, play-based, Montessori-inspired approach that supports independence, confidence, and meaningful learning. Children are cared for in a warm, home-like setting, with daily communication and strong partnerships with families. Owned and operated by Yalda Barghi, with a focus on quality care, safety, and early childhood development.',
-    centerLabel: 'Puyallup Childcare Center',
+      'The Little Roots Home Daycare is a licensed family home daycare program for children ages 3 months to 5 years. We offer a safe, nurturing, and engaging environment with a hands-on, play-based, Montessori-inspired approach that supports independence, confidence, and meaningful learning. Children are cared for in a warm, home-like setting, with daily communication and strong partnerships with families. Owned and operated by Yalda Barghi, with a focus on quality care, safety, and early childhood development.',
     reviewsLinkLabel: "Little Roots' Reviews",
     reviewsLink: '/reviews',
     getStartedLabel: 'Get Started Today',
     socials: [
-      { label: 'Google', url: 'https://google.com', iconKey: 'google' },
+      // { label: 'Google', url: 'https://google.com', iconKey: 'google' },
       {
         label: '@littleroots_homedaycare',
         url: 'https://www.instagram.com/littleroots_homedaycare',
         iconKey: 'instagram',
       },
-      { label: 'Facebook', url: 'https://facebook.com', iconKey: 'facebook' },
+      // { label: 'Facebook', url: 'https://facebook.com', iconKey: 'facebook' },
     ],
     phoneDisplay: '(425) 429-8058',
     phoneHref: 'tel:+14254298058',
