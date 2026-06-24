@@ -6,7 +6,6 @@ import {
   PhoneCall,
   ShieldCheck,
   Sparkles,
-  Star,
 } from 'lucide-react'
 import { homeContent, programs, siteContent } from '../data/content'
 
