@@ -89,7 +89,7 @@ export const siteContent = {
   ],
   sidebar: {
     greeting: 'Hello,',
-    introTitle: "I'm Yalda Barghi",
+    introTitle: "I'm Yalda",
     introBody:
       'The Little Roots Home Daycare is a licensed family home daycare program for children ages 3 months to 5 years. We offer a safe, nurturing, and engaging environment with a hands-on, play-based, Montessori-inspired approach that supports independence, confidence, and meaningful learning. Children are cared for in a warm, home-like setting, with daily communication and strong partnerships with families. Owned and operated by Yalda Barghi, with a focus on quality care, safety, and early childhood development.',
     reviewsLinkLabel: "Little Roots' Reviews",

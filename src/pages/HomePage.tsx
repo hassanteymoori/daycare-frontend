@@ -27,10 +27,10 @@ export function HomePage() {
             {homeContent.callNowLabel}
           </a>
         </div>
-        <p className="home-rating">
-          <Star size={16} aria-hidden="true" />
-          {homeContent.ratingLine}
-        </p>
+        {/* <p className="home-rating"> */}
+          {/* <Star size={16} aria-hidden="true" /> */}
+          /* {homeContent.ratingLine} */
+        {/* </p> */}
       </article>
 
       <article className="panel checklist-panel">
@@ -38,10 +38,10 @@ export function HomePage() {
           <ShieldCheck size={16} aria-hidden="true" />
           {homeContent.trustLine}
         </p>
-        <Link to="/reviews" className="text-link">
-          <Star size={16} aria-hidden="true" />
-          {homeContent.readReviewsLabel}
-        </Link>
+        {/* <Link to="/reviews" className="text-link"> */}
+          {/* <Star size={16} aria-hidden="true" /> */}
+          /* {homeContent.readReviewsLabel} */
+        {/* </Link> */}
       </article>
 
       <article className="panel title-block">
