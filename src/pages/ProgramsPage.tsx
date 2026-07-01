@@ -20,7 +20,7 @@ export function ProgramsPage() {
               {program.title} <small>{program.age}</small>
             </h3>
             <p>{program.details}</p>
-            <span className="pill">{program.ratio}</span>
+            
           </article>
         ))}
       </div>
