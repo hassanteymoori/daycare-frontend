@@ -7,11 +7,24 @@ import {
   ShieldCheck,
   Sparkles,
 } from 'lucide-react'
+import { JsonLd, Seo } from '../components/Seo'
 import { homeContent, programs, siteContent } from '../data/content'
+import { buildDaycareSchema, buildFaqSchema } from '../seo/structuredData'
 
 export function HomePage() {
+  const daycareSchema = buildDaycareSchema()
+  const faqSchema = buildFaqSchema()
+
   return (
     <section className="page-section">
+      <Seo
+        title="Daycare in Puyallup, WA"
+        description="Trusted licensed family home daycare in Puyallup, WA for infants, toddlers, and preschoolers. Montessori-inspired, play-based learning, USDA/CACFP meals, and daily family communication."
+        path="/"
+      />
+      <JsonLd id="daycare" data={daycareSchema} />
+      <JsonLd id="home-faq" data={faqSchema} />
+
       <article className="hero-copy panel">
         <p className="eyebrow">{homeContent.eyebrow}</p>
         <h1>{homeContent.heroTitle}</h1>

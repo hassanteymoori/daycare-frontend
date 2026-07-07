@@ -1,9 +1,16 @@
 import { Baby, Mail, MessageSquareText, Phone, Send, UserRound } from 'lucide-react'
+import { Seo } from '../components/Seo'
 import { contactPageContent } from '../data/content'
 
 export function ContactPage() {
   return (
     <section className="page-section contact-layout">
+      <Seo
+        title="Contact Little Roots Home Daycare"
+        description="Schedule a daycare tour in Puyallup, WA. Call, text, or email Little Roots Home Daycare to ask about enrollment, availability, and childcare plans."
+        path="/contact"
+      />
+
       <article className="panel title-block">
         <p className="eyebrow">{contactPageContent.eyebrow}</p>
         <h1>{contactPageContent.title}</h1>

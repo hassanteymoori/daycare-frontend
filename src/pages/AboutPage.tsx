@@ -1,9 +1,16 @@
 import { HandHeart, MessageCircleHeart, Puzzle, School, ShieldCheck, Users } from 'lucide-react'
+import { Seo } from '../components/Seo'
 import { aboutContent } from '../data/content'
 
 export function AboutPage() {
   return (
     <section className="page-section">
+      <Seo
+        title="About Our Daycare in Puyallup, WA"
+        description="Meet Little Roots Home Daycare and owner Yalda Barghi. Learn about our mission, safety standards, Montessori-inspired play-based learning, and family partnerships in Puyallup, WA."
+        path="/about"
+      />
+
       <article className="panel title-block">
         <p className="eyebrow">{aboutContent.eyebrow}</p>
         <h1>{aboutContent.title}</h1>

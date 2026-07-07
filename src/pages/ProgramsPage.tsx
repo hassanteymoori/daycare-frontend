@@ -1,9 +1,16 @@
 import { Baby, BookOpenText, GraduationCap, Sparkles, Users, Utensils } from 'lucide-react'
+import { Seo } from '../components/Seo'
 import { programs, programsPageContent } from '../data/content'
 
 export function ProgramsPage() {
   return (
     <section className="page-section">
+      <Seo
+        title="Infant, Toddler, and Preschool Programs"
+        description="Explore our childcare programs in Puyallup, WA for ages 3 months to 5 years, including infant care, toddler care, and preschool readiness in a nurturing home setting."
+        path="/programs"
+      />
+
       <article className="panel title-block">
         <p className="eyebrow">{programsPageContent.eyebrow}</p>
         <h1 className="heading-with-icon">

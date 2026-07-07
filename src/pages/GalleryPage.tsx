@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Camera, X } from 'lucide-react'
+import { Seo } from '../components/Seo'
 import { galleryPageContent } from '../data/content'
 
 type GalleryItem = {
@@ -61,6 +62,12 @@ export function GalleryPage() {
 
   return (
     <section className="page-section">
+      <Seo
+        title="Daycare Gallery"
+        description="See daily moments from Little Roots Home Daycare in Puyallup, WA including hands-on learning, creative play, reading, and outdoor activities."
+        path="/gallery"
+      />
+
       <article className="panel title-block">
         <p className="eyebrow">{galleryPageContent.eyebrow}</p>
         <h1 className="heading-with-icon">
